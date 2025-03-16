@@ -11,6 +11,16 @@
 
     <script>
         console.log("hello world")
+        function getComputerChoice() {
+            let computerChoice = Math.random();
+            if (computerChoice < .3) {
+                return "Rock" 
+            }
+            if ( 0.3 < computerChoice && computerChoice < 0.6 ) {
+                return "Paper"
+            }
+            return "Scissors"
+        } 
     </script>
 </body>
 </html>
