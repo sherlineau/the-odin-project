@@ -59,6 +59,26 @@
                 return "You lost"
             }
         }
+
+        function startGame(){
+            let rounds = 5;
+            while (rounds > 0) {
+                const humanSelection = getUserChoice();
+                const computerSelection = getComputerChoice();
+                playRound(humanSelection,computerSelection)
+                console.log("computer score:" + computerScore)
+                console.log("user score:" + userScore)
+                rounds--
+            }
+            if (userScore > computerScore) {
+                console.log("You Win")
+            }
+            else {
+                console.log("You Lost")
+            }
+        }
+
+        startGame();
     </script>
 </body>
 </html>
