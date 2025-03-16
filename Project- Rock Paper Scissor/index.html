@@ -38,7 +38,27 @@
             return "Invalid Selection"
         }
 
-        console.log(getUserChoice())
+        function playRound(humanChoice, computerChoice) {
+            if (humanChoice == computerChoice) {
+                return "It's a tie!"
+            }
+            if (humanChoice == "Rock" && computerChoice == "Scissors") {
+                userScore++
+                return "You Win"
+            }
+            if (humanChoice == "Scissors" && computerChoice == "Paper") {
+                userScore++
+                return "You Win"
+            }
+            if (humanChoice == "Paper" && computerChoice == "Rock") {
+                userScore++
+                return "You Win"
+            }
+            else {
+                computerScore++
+                return "You lost"
+            }
+        }
     </script>
 </body>
 </html>
