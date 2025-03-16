@@ -21,6 +21,22 @@
             }
             return "Scissors"
         } 
+
+        function getUserChoice() {
+            let userChoice = Number(window.prompt("Choose [1]Rock, [2]Paper, or [3]Scissors: numbers only"))
+            if (userChoice == 1) {
+                return "Rock"
+            }
+            if (userChoice == 2) {
+                return "Paper"
+            }
+            if (userChoice == 3) {
+                return "Scissors"
+            }
+            return "Invalid Selection"
+        }
+
+        console.log(getUserChoice())
     </script>
 </body>
 </html>
